@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Created by ismayilov.dev | www.instagram.com/ismayilov.dev-->
+<html lang="en" dir="ltr">
+  <head>
+      <link rel="stylesheet" href="./assets/css/user.css">
+    <meta charset="UTF-8">
+    <title> Profilim  | Portfelim </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">Portfelim.com</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Axtar...">
+         <span class="tooltip">Axtar</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Panel</span>
+        </a>
+         <span class="tooltip">Panel</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Profil</span>
+       </a>
+       <span class="tooltip">Profil</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Mesajlar</span>
+       </a>
+       <span class="tooltip">Mesajlar</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <!--<img src="profile.jpg" alt="profileImg">-->
+           <div class="name_job">
+             <div class="name">ismayilov.dev</div>
+             <div class="job">Front-end developer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" style="cursor: pointer;" onclick="signOut()"></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">Panel</div>
+  </section>
+  <script src="./assets/js/user.js"></script>
+  <script src="./server/sdk.js"></script>
+  <script src="./server/signOut.js"></script>
+</body>
+</html>
